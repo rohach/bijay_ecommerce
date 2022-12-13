@@ -1,0 +1,67 @@
+.first__container {
+  display: grid;
+  place-content: center;
+  grid-template-areas:
+    "first__image slider second__image"
+    "third__image slider fourth__image";
+  gap: 1rem;
+}
+.first__image {
+  grid-area: first__image;
+}
+.second__image {
+  grid-area: second__image;
+}
+.slider {
+  grid-area: slider;
+}
+.third__image {
+  grid-area: third__image;
+}
+.fourth__image {
+  grid-area: fourth__image;
+}
+.slider__inner__images {
+  width: 300px;
+  height: 300px;
+}
+.slider {
+  width: 500px;
+  height: 500px;
+}
+/* second container */
+.second__container {
+  margin-top: 1rem;
+  background-color: var(--orange);
+  color: var(--black);
+}
+.second__container__inner {
+  box-shadow: 0 0 0 100vmax var(--orange);
+  background-color: var(--orange);
+  clip-path: inset(0 -100vmax);
+}
+@media (max-width: 1024px) {
+  .first__container {
+    width: 87%;
+    margin: 0 auto;
+    grid-template-areas:
+      "slider"
+      "first__image"
+      "second__image"
+      "third__image"
+      "fourth__image";
+  }
+  .slider__inner__images {
+    width: 100%;
+    height: 100%;
+  }
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .first__container {
+    width: 90%;
+  }
+}

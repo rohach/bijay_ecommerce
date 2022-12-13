@@ -1,0 +1,125 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.login__img__container {
+  width: 80%;
+}
+.login__image {
+  width: 100%;
+}
+.login__form {
+  width: 30%;
+  padding: 32px;
+  border-radius: 10px;
+}
+.formdiv {
+  position: relative;
+  height: 48px;
+  margin-bottom: 20px;
+}
+.forminput {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 16px;
+  background-color: #e5e9f6;
+  z-index: 1;
+}
+.formlabel {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  place-content: center;
+  padding: 3px;
+  color: gray !important;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.keep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+.recover a {
+  color: #1a73e8;
+}
+.formbtn,
+.formbtn__google {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.formbtn {
+  background-color: #1a73e8;
+  color: white;
+}
+.formbtn__google {
+  background-color: #e65751;
+  color: white;
+}
+.login__option {
+  margin: 10px 0;
+  text-align: center;
+}
+.formbtn:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.forminput:focus + .formlabel,
+.forminput:not(:placeholder-shown).forminput:not(:focus) + .formlabel {
+  top: -10px;
+  left: 12px;
+  color: #1a73e8 !important;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 10;
+}
+.signUpOpt {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 20px !important;
+}
+@media (max-width: 1024px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+  .login__img {
+    width: 100%;
+    height: 100%;
+  }
+  .login__form {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* MEDIA QUERIES (SMALL) */
+@media screen and (max-width: 600px) {
+  .Navbar {
+    width: 92%;
+  }
+}
